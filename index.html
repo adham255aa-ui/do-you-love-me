@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff8fb1">
+  <meta name="description" content="A little romantic surprise ❤️">
+  <title>Do You Love Me? ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="hearts-background" aria-hidden="true" id="heartsBackground"></div>
+
+  <main class="app">
+    <section class="card question-card" id="questionScreen" aria-labelledby="questionTitle">
+      <div class="tiny-heart" aria-hidden="true">💗</div>
+      <p class="eyebrow">A tiny question, but a very important one...</p>
+      <h1 id="questionTitle">Do You Love Me? 🥺❤️</h1>
+      <p class="subtitle" id="reactionMessage" aria-live="polite">Be honest with me... 🙈</p>
+
+      <div class="button-stage" id="buttonStage">
+        <button class="choice-button yes-button" id="yesButton" type="button">Yes ❤️</button>
+        <button class="choice-button no-button" id="noButton" type="button">No 💔</button>
+      </div>
+      <p class="hint">Take your time... but not too much 😂</p>
+    </section>
+
+    <section class="card surprise-card hidden" id="surpriseScreen" aria-labelledby="surpriseTitle">
+      <div class="celebration" aria-hidden="true" id="celebration"></div>
+      <p class="eyebrow">I’ve been waiting for this moment! ✨</p>
+      <h1 id="surpriseTitle">I knew you loved me! ❤️🥹</h1>
+      <p class="love-copy">And I love you even more, you’re my favorite person in the world. 🧸❤️</p>
+
+      <div class="bears" role="img" aria-label="Two cute teddy bears hugging">
+        <svg class="bear bear-left" viewBox="0 0 180 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="90" cy="174" rx="55" ry="9" fill="#d87d9c" opacity=".22"/>
+          <circle cx="52" cy="35" r="21" fill="#b8794e"/><circle cx="52" cy="35" r="10" fill="#eab995"/>
+          <circle cx="112" cy="35" r="21" fill="#b8794e"/><circle cx="112" cy="35" r="10" fill="#eab995"/>
+          <ellipse cx="82" cy="103" rx="49" ry="58" fill="#c78a5b"/>
+          <ellipse cx="82" cy="119" rx="29" ry="34" fill="#f2cda9"/>
+          <circle cx="82" cy="63" r="43" fill="#c78a5b"/>
+          <ellipse cx="82" cy="77" rx="23" ry="17" fill="#f2cda9"/>
+          <circle cx="67" cy="62" r="4.5" fill="#38251e"/><circle cx="97" cy="62" r="4.5" fill="#38251e"/>
+          <ellipse cx="82" cy="73" rx="6" ry="4.5" fill="#38251e"/>
+          <path d="M76 81 Q82 87 88 81" fill="none" stroke="#70422f" stroke-width="2.5" stroke-linecap="round"/>
+          <ellipse cx="42" cy="113" rx="18" ry="30" transform="rotate(-28 42 113)" fill="#c78a5b"/>
+          <ellipse cx="119" cy="113" rx="18" ry="30" transform="rotate(25 119 113)" fill="#c78a5b"/>
+          <ellipse cx="60" cy="155" rx="21" ry="13" fill="#b8794e"/><ellipse cx="104" cy="155" rx="21" ry="13" fill="#b8794e"/>
+          <path d="M81 91 C70 80 58 93 81 110 C104 93 92 80 81 91Z" fill="#ff5f91"/>
+        </svg>
+        <svg class="bear bear-right" viewBox="0 0 180 190" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="90" cy="174" rx="55" ry="9" fill="#d87d9c" opacity=".22"/>
+          <circle cx="52" cy="35" r="21" fill="#e0a96e"/><circle cx="52" cy="35" r="10" fill="#ffe0b7"/>
+          <circle cx="112" cy="35" r="21" fill="#e0a96e"/><circle cx="112" cy="35" r="10" fill="#ffe0b7"/>
+          <ellipse cx="94" cy="103" rx="49" ry="58" fill="#edbd80"/>
+          <ellipse cx="94" cy="119" rx="29" ry="34" fill="#fff0d7"/>
+          <circle cx="94" cy="63" r="43" fill="#edbd80"/>
+          <ellipse cx="94" cy="77" rx="23" ry="17" fill="#fff0d7"/>
+          <circle cx="79" cy="62" r="4.5" fill="#38251e"/><circle cx="109" cy="62" r="4.5" fill="#38251e"/>
+          <ellipse cx="94" cy="73" rx="6" ry="4.5" fill="#38251e"/>
+          <path d="M88 81 Q94 87 100 81" fill="none" stroke="#8a5a34" stroke-width="2.5" stroke-linecap="round"/>
+          <ellipse cx="54" cy="113" rx="18" ry="30" transform="rotate(-25 54 113)" fill="#edbd80"/>
+          <ellipse cx="131" cy="113" rx="18" ry="30" transform="rotate(28 131 113)" fill="#edbd80"/>
+          <ellipse cx="72" cy="155" rx="21" ry="13" fill="#dca66c"/><ellipse cx="116" cy="155" rx="21" ry="13" fill="#dca66c"/>
+          <path d="M95 91 C84 80 72 93 95 110 C118 93 106 80 95 91Z" fill="#ff5f91"/>
+        </svg>
+        <span class="hug-heart" aria-hidden="true">❤️</span>
+      </div>
+
+      <button class="secondary-button" id="extraSurpriseButton" type="button">Click here for another surprise 💌</button>
+      <p class="extra-message hidden" id="extraMessage" aria-live="polite">You’re not just someone I love; you’re my favorite coincidence and the sweetest story I want to live every day. I love you more than words can say. ❤️🌍</p>
+      <button class="restart-button" id="restartButton" type="button">Play again? 😄</button>
+    </section>
+  </main>
+</body>
+</html>
